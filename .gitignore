@@ -85,14 +85,3 @@ project/plugins/project/
 # sbt-assembly
 *-assembly.jar
 sg_agent/
-
-
-.idea/vcs.xml
-
-*.iml
-
-*.iml
-
-*.iml
-
-leetCode/leetCode.iml
