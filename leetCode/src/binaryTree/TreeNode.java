@@ -27,7 +27,7 @@ public class TreeNode {
         TreeNode q = p;
         Queue<TreeNode> queue = new LinkedList<>();
         int i=0;
-        while (p!=null){
+        while (p != null){
             if(2*i+1<value.length){
                 p.left = new TreeNode(value[2*i+1]);
                 queue.add(p.left);
