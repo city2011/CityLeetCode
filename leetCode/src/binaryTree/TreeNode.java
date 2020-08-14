@@ -14,7 +14,7 @@ public class TreeNode {
     public TreeNode left;
     public TreeNode right;
 
-    TreeNode(int x) {
+    public TreeNode(int x) {
         val = x;
     }
 
@@ -73,7 +73,7 @@ public class TreeNode {
         return root;
     }
 
-    List<Integer> levelTravesal() {
+    public List<Integer> levelTravesal() {
         List<Integer> ans = new LinkedList<>();
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(this);
