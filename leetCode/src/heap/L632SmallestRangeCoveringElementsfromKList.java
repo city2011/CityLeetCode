@@ -1,7 +1,5 @@
 package heap;
 
-import org.junit.runner.RunWith;
-
 import java.util.*;
 
 /**

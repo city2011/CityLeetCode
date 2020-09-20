@@ -1,4 +1,4 @@
-package slowfastPointer;
+package linkedlist;
 
 /**
 @author city

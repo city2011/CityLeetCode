@@ -3,11 +3,15 @@ package array;
 import java.util.*;
 
 public class Main {
+    public static void main(String[] args) {
+        Main m = new Main();
+        int [] input = {7,5,6,2,3,4,7,8,6,3};
+        m.quickSort(input, 0, input.length);
+    }
     private static void quickSort(int[] arr, int low, int high) {
         if (low < high) {
             // 找寻基准数据的正确索引
             int index = getIndex(arr, low, high);
-
             // 进行迭代对index之前和之后的数组进行相同的操作使整个数组变成有序
             //quickSort(arr, 0, index - 1); 之前的版本，这种姿势有很大的性能问题，谢谢大家的建议
             quickSort(arr, low, index - 1);

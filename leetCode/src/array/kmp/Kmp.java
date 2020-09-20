@@ -10,8 +10,8 @@ public class Kmp {
         String s = "ahsjskshaaahsjs";
 
         int [] res = m.getNext(s);
-        System.out.println(Arrays.toString(res));
 
+        System.out.println(Arrays.toString(res));
         System.out.println(s.length() +" " + (s.length()-res[s.length()-1]));
 
     }
