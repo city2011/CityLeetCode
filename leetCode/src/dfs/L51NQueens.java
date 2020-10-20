@@ -42,7 +42,6 @@ n 皇后问题研究的是如何将 n 个皇后放置在 n×n 的棋盘上，�
 ############################################# 题目描述 #############################################
  */
 public class L51NQueens {
-
     public List<List<String>> solveNQueens(int n) {
         List<List<String>> solutions = new ArrayList<>();
         Set<Integer> columns = new HashSet<>();
@@ -97,6 +96,4 @@ public class L51NQueens {
         }
         return ans;
     }
-
-
 }
