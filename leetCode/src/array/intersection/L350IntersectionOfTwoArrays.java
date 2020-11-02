@@ -1,10 +1,12 @@
-package array;
+package array.intersection;
 
 import java.util.*;
 
 public class L350IntersectionOfTwoArrays {
     public static void main(String[] args) {
-
+        L350IntersectionOfTwoArrays m = new L350IntersectionOfTwoArrays();
+        int [] ans = m.intersect(new int [] {1,2,3}, new int [] {1,2,4});
+        System.out.println(Arrays.toString(ans));
     }
 
     private int[] intersect(int[] nums1, int[] nums2) {
