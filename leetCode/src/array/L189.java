@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class L189 {
     public static void main(String[] args) {
         L189 m = new L189();
-        m.rotate(new int [] {-1,-100,3,99,8}, 2);
+        m.rotate(new int [] {-1,-100,3,99}, 2);
     }
     public void rotate(int[] nums, int k) {
         int n = nums.length;
