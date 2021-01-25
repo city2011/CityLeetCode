@@ -34,7 +34,7 @@ public class L1584_Minimum_Gene_Tree {
         return Math.abs(points[x][0] - points[y][0]) + Math.abs(points[x][1] - points[y][1]);
     }
 
-    class DisjointSetUnion {
+    static class DisjointSetUnion {
         int[] f;
         int[] rank;
         int n;

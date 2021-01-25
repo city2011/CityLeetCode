@@ -1,5 +1,7 @@
 package graph.union_find;
 
+import com.google.common.collect.Lists;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -11,7 +13,13 @@ import java.util.stream.Collectors;
 
 public class L1725 {
     public static void main(String[] args) {
-
+        L1725 l = new L1725();
+        List<List<String>> accounts = Lists.newArrayList();
+        accounts.add(Lists.newArrayList("john", "ddddddd@dddd"));
+        accounts.add(Lists.newArrayList("joke", "john@ddd.com","ddddddd@dddd"));
+        accounts.add(Lists.newArrayList("marial", "john@ddd.com"));
+        List<List<String>> res = l.accountsMerge(accounts);
+        System.out.println(res);
     }
 
     public List<List<String>> accountsMerge(List<List<String>> accounts) {
@@ -66,7 +74,7 @@ public class L1725 {
         return ans;
     }
 
-    class Uf{
+    static class Uf{
         int[] parent;
 
         Uf(int n){
