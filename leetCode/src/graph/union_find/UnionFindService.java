@@ -22,7 +22,7 @@ public class UnionFindService {
 
     public int findRootUsingPS(int i){
         if(i != parent[i]){
-            parent[i] = findRootUsingPS(i);
+            parent[i] = findRootUsingPS(parent[i]);
         }
         return parent[i];
     }
@@ -44,5 +44,9 @@ public class UnionFindService {
             parent[fj] = fi;
             return fi;
         }
+    }
+
+    public boolean isUnion(int a, int b){
+        return findRootUsingPS(a) == findRootUsingPS(b);
     }
 }
