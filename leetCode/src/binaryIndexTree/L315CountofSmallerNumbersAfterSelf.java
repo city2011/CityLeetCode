@@ -43,7 +43,6 @@ public class L315CountofSmallerNumbersAfterSelf {
         System.out.println(countSmaller);
     }
 
-
     public List<Integer> countSmaller(int[] nums) {
         List<Integer> res = new ArrayList<>();
         int len = nums.length;
