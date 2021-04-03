@@ -3,6 +3,7 @@ package graph.union_find;
 public class UnionFindService {
     private int[] parent;
     private int[] rank;
+    private int count;
 
     public UnionFindService(int n){
         parent = new int [n];
@@ -10,6 +11,7 @@ public class UnionFindService {
         for (int i = 1; i < n; i++) {
             parent[i] = i;
         }
+        count = n;
     }
 
     public int findRoot(int i){
@@ -33,6 +35,7 @@ public class UnionFindService {
         if(fi == fj){
             return -1;
         }
+        count--;
         if(rank[fi] == rank[fj]){
             parent[fi] = fj;
             rank[fj]++;
@@ -48,5 +51,9 @@ public class UnionFindService {
 
     public boolean isUnion(int a, int b){
         return findRootUsingPS(a) == findRootUsingPS(b);
+    }
+
+    public int soloCount(){
+        return count;
     }
 }
