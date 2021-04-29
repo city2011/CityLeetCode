@@ -10,8 +10,8 @@
 
     <parent>
         <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter</artifactId>
-        <version>2.3.3.RELEASE</version>
+        <artifactId>spring-boot-starters</artifactId>
+        <version>1.5.1.RELEASE</version>
     </parent>
 
     <properties>
@@ -44,8 +44,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-maven-plugin -->
-
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
@@ -78,6 +76,10 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
             <!-- mybatis generator 自动生成代码插件 -->
             <plugin>
                 <groupId>org.mybatis.generator</groupId>
