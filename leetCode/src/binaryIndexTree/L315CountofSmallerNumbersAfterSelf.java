@@ -125,6 +125,4 @@ public class L315CountofSmallerNumbersAfterSelf {
             }
         }
     }
-
-
 }
