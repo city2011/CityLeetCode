@@ -53,7 +53,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.23</version>
+            <version>8.0.28</version>
         </dependency>
         <!--需要手动添加的依赖-->
         <!--使用durid连接池的依赖-->
@@ -101,7 +101,7 @@
                     <dependency>
                         <groupId>mysql</groupId>
                         <artifactId>mysql-connector-java</artifactId>
-                        <version>8.0.23</version>
+                        <version>8.0.28</version>
                     </dependency>
                     <dependency>
                         <groupId>org.mybatis.generator</groupId>
